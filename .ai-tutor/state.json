@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "study_id": "study_c524375c-79b6-4041-9fba-7222addff28b",
-  "revision": 1,
-  "updated_at": "2026-10-01T21:17:12Z",
+  "revision": 2,
+  "updated_at": "2026-10-01T21:22:38Z",
   "topics": [
     {
       "topic_id": "topic_cc_modelo_mental",
@@ -15,7 +15,7 @@
     },
     {
       "topic_id": "topic_cc_contexto",
-      "name": "Gestão de contexto: CLAUDE.md, sessões, /clear e /compact, documentação vs memória",
+      "name": "Contexto e instruções: CLAUDE.md, rules (.claude/rules), auto memory, /clear e /compact",
       "mastery": 0,
       "retention": "unknown",
       "status": "not_started",
@@ -33,7 +33,16 @@
     },
     {
       "topic_id": "topic_escolha_ambiente",
-      "name": "Escolher o ambiente certo: Chat, Projects, Cowork, Claude Code local e na nuvem",
+      "name": "Mapa do ecossistema Claude e escolha do ambiente: Chat, Projects, Cowork, Claude in Chrome, Claude Code (terminal, desktop, nuvem)",
+      "mastery": 0,
+      "retention": "unknown",
+      "status": "not_started",
+      "last_practice": null,
+      "evidence_ids": []
+    },
+    {
+      "topic_id": "topic_cowork_projects",
+      "name": "Cowork e Projects no trabalho: projeto com instruções e arquivos, conectores, modos de permissão e tarefas agendadas",
       "mastery": 0,
       "retention": "unknown",
       "status": "not_started",
@@ -60,7 +69,7 @@
     },
     {
       "topic_id": "topic_skills",
-      "name": "Skills: quando criar, estrutura de SKILL.md, manutenção e reutilização",
+      "name": "Skills e plugins: quando criar, estrutura de SKILL.md, manutenção e reutilização",
       "mastery": 0,
       "retention": "unknown",
       "status": "not_started",
@@ -69,7 +78,16 @@
     },
     {
       "topic_id": "topic_integracoes",
-      "name": "Integrações: conectores/MCP, hooks e automações recorrentes, com riscos e custos",
+      "name": "MCP e conectores: o que são, como conectar, permissões, riscos e custos",
+      "mastery": 0,
+      "retention": "unknown",
+      "status": "not_started",
+      "last_practice": null,
+      "evidence_ids": []
+    },
+    {
+      "topic_id": "topic_hooks_permissoes",
+      "name": "Hooks e regras de permissão: quando usar instrução, hook ou permissão (orientação vs garantia)",
       "mastery": 0,
       "retention": "unknown",
       "status": "not_started",
@@ -78,7 +96,7 @@
     },
     {
       "topic_id": "topic_automacao_python",
-      "name": "Pequenas automações em Python construídas e testadas com Claude Code",
+      "name": "Pequenas automações em Python construídas e testadas com Claude Code (opcional)",
       "mastery": 0,
       "retention": "unknown",
       "status": "not_started",

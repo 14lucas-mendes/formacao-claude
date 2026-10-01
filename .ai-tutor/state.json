@@ -1,0 +1,125 @@
+{
+  "schema_version": 2,
+  "study_id": "study_c524375c-79b6-4041-9fba-7222addff28b",
+  "revision": 1,
+  "updated_at": "2026-10-01T21:17:12Z",
+  "topics": [
+    {
+      "topic_id": "topic_cc_modelo_mental",
+      "name": "Modelo mental do Claude Code: loop agêntico, ferramentas, contexto e limites",
+      "mastery": 0,
+      "retention": "unknown",
+      "status": "not_started",
+      "last_practice": null,
+      "evidence_ids": []
+    },
+    {
+      "topic_id": "topic_cc_contexto",
+      "name": "Gestão de contexto: CLAUDE.md, sessões, /clear e /compact, documentação vs memória",
+      "mastery": 0,
+      "retention": "unknown",
+      "status": "not_started",
+      "last_practice": null,
+      "evidence_ids": []
+    },
+    {
+      "topic_id": "topic_cc_seguranca",
+      "name": "Trabalho seguro: modos de permissão, revisão de diffs, Git como rede de segurança, dados sensíveis",
+      "mastery": 0,
+      "retention": "unknown",
+      "status": "not_started",
+      "last_practice": null,
+      "evidence_ids": []
+    },
+    {
+      "topic_id": "topic_escolha_ambiente",
+      "name": "Escolher o ambiente certo: Chat, Projects, Cowork, Claude Code local e na nuvem",
+      "mastery": 0,
+      "retention": "unknown",
+      "status": "not_started",
+      "last_practice": null,
+      "evidence_ids": []
+    },
+    {
+      "topic_id": "topic_workflow_trabalho",
+      "name": "Automatizar uma tarefa recorrente do trabalho com processo documentado e medido",
+      "mastery": 0,
+      "retention": "unknown",
+      "status": "not_started",
+      "last_practice": null,
+      "evidence_ids": []
+    },
+    {
+      "topic_id": "topic_verificacao_saidas",
+      "name": "Verificar saídas de IA: critérios de aceitação, checagem de fatos, testes",
+      "mastery": 0,
+      "retention": "unknown",
+      "status": "not_started",
+      "last_practice": null,
+      "evidence_ids": []
+    },
+    {
+      "topic_id": "topic_skills",
+      "name": "Skills: quando criar, estrutura de SKILL.md, manutenção e reutilização",
+      "mastery": 0,
+      "retention": "unknown",
+      "status": "not_started",
+      "last_practice": null,
+      "evidence_ids": []
+    },
+    {
+      "topic_id": "topic_integracoes",
+      "name": "Integrações: conectores/MCP, hooks e automações recorrentes, com riscos e custos",
+      "mastery": 0,
+      "retention": "unknown",
+      "status": "not_started",
+      "last_practice": null,
+      "evidence_ids": []
+    },
+    {
+      "topic_id": "topic_automacao_python",
+      "name": "Pequenas automações em Python construídas e testadas com Claude Code",
+      "mastery": 0,
+      "retention": "unknown",
+      "status": "not_started",
+      "last_practice": null,
+      "evidence_ids": []
+    },
+    {
+      "topic_id": "topic_nicho_problema",
+      "name": "Escolher nicho e problema de serviço a partir da própria experiência e de conversas reais",
+      "mastery": 0,
+      "retention": "unknown",
+      "status": "not_started",
+      "last_practice": null,
+      "evidence_ids": []
+    },
+    {
+      "topic_id": "topic_oferta_servico",
+      "name": "Desenhar a oferta: escopo, entregáveis, preço, riscos, LGPD e responsabilidades",
+      "mastery": 0,
+      "retention": "unknown",
+      "status": "not_started",
+      "last_practice": null,
+      "evidence_ids": []
+    },
+    {
+      "topic_id": "topic_piloto_cliente",
+      "name": "Executar piloto ou apresentar proposta a um cliente potencial e registrar aprendizados",
+      "mastery": 0,
+      "retention": "unknown",
+      "status": "not_started",
+      "last_practice": null,
+      "evidence_ids": []
+    }
+  ],
+  "evidences": [],
+  "sessions": [],
+  "lessons": [],
+  "weak_points": [],
+  "projects": [],
+  "next_focus": {
+    "topic_id": "topic_cc_modelo_mental",
+    "action": "Primeira sessão: mapear tarefas recorrentes do trabalho do aluno (área e rotinas) e iniciar o modelo mental do Claude Code."
+  }
+}

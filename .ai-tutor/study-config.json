@@ -1,0 +1,24 @@
+{
+  "schema_version": 2,
+  "study_id": "study_c524375c-79b6-4041-9fba-7222addff28b",
+  "topic": "Claude Code aplicado ao trabalho e a serviços com IA",
+  "goal": "Em 3 meses: (1) usar Claude Code e Cowork no fluxo de trabalho diário de forma segura, verificável e documentada; (2) ter uma primeira oferta de serviço com IA definida, com um piloto entregue ou proposta apresentada a pelo menos um cliente potencial, como base para renda extra. Fora do escopo: construir produto/SaaS próprio.",
+  "deadline": "2026-12-31",
+  "weekly_hours": 4,
+  "preferred_times": [
+    "fins de semana",
+    "cerca de 1h por sessão"
+  ],
+  "initial_level": "Iniciante em Claude Code como disciplina; usa Claude Chat, Cowork, Claude Code e ChatGPT no dia a dia; confortável no terminal; Python iniciante com boa base da linguagem.",
+  "language": "pt-BR",
+  "accessibility": [],
+  "source_policy": {
+    "prefer_primary": true,
+    "prefer_pt_br": true,
+    "primary_sources": [
+      "https://code.claude.com/docs",
+      "https://docs.claude.com"
+    ]
+  },
+  "external_consents": {}
+}

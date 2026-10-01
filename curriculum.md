@@ -4,7 +4,7 @@
 
 **Contexto:** empregado público (CLT) no setor de manutenção de uma empresa de transporte ferroviário, em transição para automação, agentes de IA e desenvolvimento de software, começando por Python. O aluno declarou que pode ter renda extra e que pode usar informações da empresa no próprio workflow com Claude.
 
-**Objetivo (5 meses, até 2027-02-28):** concluir a **primeira etapa** da transição:
+**Objetivo (6 meses, até 2027-03-31):** concluir a **primeira etapa** da transição:
 1. até o **marco de 2026-12-31**, usar Claude Code e o ecossistema Claude no trabalho diário de forma segura, verificável e documentada;
 2. escrever, testar e revisar automações em Python e um agente simples com a API do Claude;
 3. publicar 1–2 projetos de portfólio no GitHub voltados a manutenção;
@@ -12,7 +12,7 @@
 
 **Fora do escopo:** construir produto/SaaS próprio; aprofundamento técnico em MCP, hooks e plugins além do necessário para usar e decidir.
 
-**Orçamento de tempo:** 4 h/semana × ~22 semanas ≈ 88 h, em sessões de ~1 h, preferencialmente no fim de semana. As semanas 12–13 caem nas festas de fim de ano: se você não estudar nelas, a semana de folga (22) cobre.
+**Orçamento de tempo:** 4 h/semana × ~26 semanas ≈ 104 h, em sessões de ~1 h, preferencialmente no fim de semana. As semanas 12–13 caem nas festas de fim de ano: se você não estudar nelas, a semana de folga (26) cobre.
 
 **Regra de conclusão:** um item só é marcado quando o tópico atinge domínio 80 (explicação Feynman autônoma + aplicação autônoma + aplicação transferida para novo contexto), com IDs de evidência registrados no `session-log.md`. Ler conteúdo, receber explicação ou ter código gerado pela IA não conta como evidência; conta o que você explica, escreve, testa ou corrige.
 
@@ -63,7 +63,7 @@ Capacidade observável: diante de uma necessidade, decidir se ela pede instruç�
   - Ideia central: CLAUDE.md e rules orientam, mas não garantem; hooks e regras de permissão (`allow`/`deny` em `settings.json`) são aplicados pelo cliente.
   - Aplicação: um hook simples ou uma regra `deny` num repositório seu.
 
-## Fase 4: Python e agentes, o novo núcleo (semanas 10–16, ~28 h)
+## Fase 4: Python e agentes, o novo núcleo (semanas 10–18, ~36 h)
 
 Capacidade observável: escrever, testar e explicar código Python próprio, revisar criticamente código gerado pela IA e construir um agente simples com a API do Claude.
 
@@ -78,9 +78,9 @@ Capacidade observável: escrever, testar e explicar código Python próprio, rev
 
 Checagem com `/progress` e `/review`: os tópicos ★ das Fases 1–2 devem estar em 80 e o workflow da Fase 2 em uso real no trabalho. Se não estiverem, o atraso é registrado aqui e a Fase 3 é a primeira a ser comprimida.
 
-## Fase 5: Portfólio e primeira oferta (semanas 17–21, ~20 h)
+## Fase 5: Portfólio e primeira oferta (semanas 19–25, ~28 h)
 
-Capacidade observável: projetos públicos que um recrutador ou cliente entende sem você explicar, e uma oferta concreta validada com pessoas reais.
+Capacidade observável: projetos públicos que um recrutador ou cliente entende sem você explicar, e uma oferta concreta validada com pessoas reais. As semanas extras servem para as conversas com clientes, que dependem da agenda de outras pessoas.
 
 - [ ] ★ `topic_portfolio`: Portfólio: 1–2 projetos no GitHub com README voltados a manutenção
   - Entrega: repositório público com problema, solução, como rodar, testes e limitações; **sem dados internos da empresa** (use dados fictícios ou anonimizados no que for público).
@@ -90,7 +90,7 @@ Capacidade observável: projetos públicos que um recrutador ou cliente entende 
   - Entrega: proposta de uma página.
 - [ ] ★ `topic_piloto_cliente`: Executar piloto ou apresentar proposta a um cliente potencial e registrar aprendizados
 
-## Semana 22: folga e revisão final (~4 h)
+## Semana 26: folga e revisão final (~4 h)
 
 Recupera atrasos ou faz a revisão espaçada final. Não é espaço para novos tópicos. Inclui planejar a **segunda etapa** da transição.
 
@@ -112,6 +112,7 @@ Recupera atrasos ou faz a revisão espaçada final. Não é espaço para novos t
 
 ## Revisões do roadmap
 
+- 2026-10-01 (rev. 5): pedido do aluno para estender de 5 para 6 meses (prazo 2027-03-31, 4 h/semana, ≈ 104 h), com base na estimativa de 85–105 h para o núcleo. Fase 4 de 7 para 9 semanas (+8 h); Fase 5 de 5 para 7 semanas (+8 h); folga passa para a semana 26. Marco de 2026-12-31 mantido. Nenhuma evidência existia.
 - 2026-10-01 (rev. 4): o aluno informou que está em transição de carreira (manutenção ferroviária → automação, agentes de IA e desenvolvimento, começando por Python), que é CLT, que pode ter renda extra e que pode usar informações da empresa no próprio workflow. Mantidos 5 meses e ≈ 88 h:
   - nova Fase 4 "Python e agentes" (★): `topic_python_qualidade`, `topic_automacao_python` (promovido), `topic_agentes_api`;
   - nova Fase 5 "Portfólio e primeira oferta", com `topic_portfolio` (★) antes do nicho e da oferta;

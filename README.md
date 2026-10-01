@@ -1,6 +1,6 @@
 # Formação Claude: Python, agentes e automação para transição de carreira
 
-Programa de estudos de 5 meses (até 2027-02-28, 4 h/semana, com marco de uso diário em 2026-12-31) para a primeira etapa de uma transição de carreira (manutenção ferroviária → automação, agentes de IA e desenvolvimento): uso do Claude Code e do ecossistema Claude no trabalho, Python com testes, um agente simples com a API do Claude, portfólio no GitHub e uma primeira oferta de serviço. Não inclui construir produto próprio.
+Programa de estudos de 6 meses (até 2027-03-31, 4 h/semana, com marco de uso diário em 2026-12-31) para a primeira etapa de uma transição de carreira (manutenção ferroviária → automação, agentes de IA e desenvolvimento): uso do Claude Code e do ecossistema Claude no trabalho, Python com testes, um agente simples com a API do Claude, portfólio no GitHub e uma primeira oferta de serviço. Não inclui construir produto próprio.
 
 O programa é conduzido com a skill [`ai-tutor`](https://github.com/14lucas-mendes/ai-tutor-skill), instalada em `.claude/skills/ai-tutor/` para funcionar também em sessões na nuvem.
 

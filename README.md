@@ -1,6 +1,6 @@
 # Formação Claude: trabalho e primeiros serviços com IA
 
-Programa de estudos de 3 meses (até 2026-12-31, 4 h/semana) para usar o Claude Code no trabalho diário e criar uma primeira oferta de serviço com IA como renda extra. Não inclui construir produto próprio.
+Programa de estudos de 5 meses (até 2027-02-28, 4 h/semana, com marco de uso diário em 2026-12-31) para usar o Claude Code no trabalho diário e criar uma primeira oferta de serviço com IA como renda extra. Não inclui construir produto próprio.
 
 O programa é conduzido com a skill [`ai-tutor`](https://github.com/14lucas-mendes/ai-tutor-skill), instalada em `.claude/skills/ai-tutor/` para funcionar também em sessões na nuvem.
 

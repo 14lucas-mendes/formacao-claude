@@ -2,15 +2,15 @@
 
 <!-- Itens são adicionados pelo workflow de currículo com IDs estáveis. -->
 
-**Objetivo (até 2026-12-31):** (1) usar Claude Code e o ecossistema Claude (Projects, Cowork, conectores, Claude in Chrome) no fluxo de trabalho diário de forma segura, verificável e documentada; (2) ter uma primeira oferta de serviço com IA definida, com piloto entregue ou proposta apresentada a pelo menos um cliente potencial.
+**Objetivo (5 meses, até 2027-02-28):** (1) até o **marco de 2026-12-31**, usar Claude Code e o ecossistema Claude (Projects, Cowork, conectores, Claude in Chrome) no fluxo de trabalho diário de forma segura, verificável e documentada; (2) até **2027-02-28**, ter uma primeira oferta de serviço com IA definida, com piloto entregue ou proposta apresentada a pelo menos um cliente potencial.
 
 **Fora do escopo:** construir produto/SaaS próprio; aprofundamento técnico em MCP, hooks e plugins além do necessário para usar e decidir.
 
-**Orçamento de tempo:** 4 h/semana × ~13 semanas ≈ 52 h, em sessões de ~1 h, preferencialmente no fim de semana.
+**Orçamento de tempo:** 4 h/semana × ~22 semanas ≈ 88 h, em sessões de ~1 h, preferencialmente no fim de semana. As semanas 12–13 caem nas festas de fim de ano: se você não estudar nelas, a semana de folga (22) cobre.
 
 **Regra de conclusão:** um item só é marcado quando o tópico atinge domínio 80 (explicação Feynman autônoma + aplicação autônoma + aplicação transferida para novo contexto), com IDs de evidência registrados no `session-log.md`. Ler conteúdo ou receber explicação não conta como evidência.
 
-**Prioridade realista:** com 52 h, os itens com ★ são o núcleo e devem chegar a 80. Os itens marcados **básico** têm meta 60: saber explicar e aplicar uma vez num caso real, sem transferência obrigatória. Itens **opcionais** só entram se sobrar tempo.
+**Prioridade realista:** com 88 h, os itens com ★ são o núcleo e devem chegar a 80. Os itens marcados **básico** têm meta 60: saber explicar e aplicar uma vez num caso real, sem transferência obrigatória.
 
 **Fontes primárias:** documentação oficial do Claude Code (https://code.claude.com/docs) e central de ajuda do Claude (https://support.claude.com). Fontes específicas são registradas por lição via `/sources`.
 
@@ -28,7 +28,7 @@ Capacidade observável: conduzir uma tarefa real no Claude Code sabendo o que el
 - [ ] ★ `topic_cc_seguranca`: Trabalho seguro: modos de permissão, revisão de diffs, Git como rede de segurança, dados sensíveis
   - Entrega: checklist pessoal de segurança aplicado a uma tarefa real, com um commit revisado por você.
 
-## Fase 2: Ecossistema Claude no trabalho diário (semanas 4–7, ~14 h)
+## Fase 2: Ecossistema Claude no trabalho diário (semanas 4–8, ~20 h)
 
 Capacidade observável: escolher o ambiente certo para cada tarefa e ter uma tarefa recorrente do trabalho feita com IA, com tempo medido antes e depois.
 
@@ -42,7 +42,7 @@ Capacidade observável: escolher o ambiente certo para cada tarefa e ter uma tar
 - [ ] ★ `topic_verificacao_saidas`: Verificar saídas de IA: critérios de aceitação, checagem de fatos, testes
   - Evidência: detectar erros plantados numa saída e definir critérios de aceitação antes de pedir.
 
-## Fase 3: Extensões: skills, MCP e hooks (semanas 8–9, ~10 h)
+## Fase 3: Extensões: skills, MCP, hooks e automação (semanas 9–12, ~16 h)
 
 Capacidade observável: diante de uma necessidade, decidir se ela pede instrução (CLAUDE.md/rule), skill, conector/MCP, hook ou permissão, e aplicar o básico de cada um.
 
@@ -53,18 +53,26 @@ Capacidade observável: diante de uma necessidade, decidir se ela pede instruç�
 - [ ] **básico** `topic_hooks_permissoes`: Hooks e regras de permissão: quando usar instrução, hook ou permissão (orientação vs garantia)
   - Ideia central: CLAUDE.md e rules orientam, mas não garantem; hooks e regras de permissão (`allow`/`deny` em `settings.json`) são aplicados pelo cliente.
   - Aplicação: um hook simples ou uma regra `deny` num repositório seu.
-- [ ] **opcional** `topic_automacao_python`: Pequenas automações em Python construídas e testadas com Claude Code
+- [ ] **básico** `topic_automacao_python`: Pequenas automações em Python construídas e testadas com Claude Code
   - Entrega: script em `projects/<slug>/` com teste executado e resultado registrado.
 
-## Fase 4: Primeiro serviço com IA (semanas 10–13, ~16 h)
+## Marco do mês 3: revisão de uso diário (semana 13, até 2026-12-31, ~4 h)
 
-Capacidade observável: uma oferta concreta validada com pessoas reais, não só no papel.
+Checagem com `/progress` e `/review`: os tópicos ★ das Fases 1–2 devem estar em 80 e o workflow da Fase 2 em uso real no trabalho. Se não estiverem, as semanas 14–15 viram reforço antes da Fase 4, e o atraso é registrado aqui.
+
+## Fase 4: Primeiro serviço com IA (semanas 14–21, ~32 h)
+
+Capacidade observável: uma oferta concreta validada com pessoas reais, não só no papel. O tempo extra serve para conversas reais com clientes, que dependem da agenda de outras pessoas, não para mais estudo.
 
 - [ ] ★ `topic_nicho_problema`: Escolher nicho e problema de serviço a partir da própria experiência e de conversas reais
   - Evidência: notas de pelo menos 3 conversas com potenciais clientes.
 - [ ] ★ `topic_oferta_servico`: Desenhar a oferta: escopo, entregáveis, preço, riscos, LGPD e responsabilidades
   - Entrega: proposta de uma página.
 - [ ] ★ `topic_piloto_cliente`: Executar piloto ou apresentar proposta a um cliente potencial e registrar aprendizados
+
+## Semana 22: folga e revisão final (~4 h)
+
+Recupera atrasos ou faz a revisão espaçada final. Não é espaço para novos tópicos.
 
 ---
 
@@ -82,6 +90,7 @@ Capacidade observável: uma oferta concreta validada com pessoas reais, não só
 
 ## Revisões do roadmap
 
+- 2026-10-01 (rev. 3): pedido do aluno para estender o plano de 3 para 5 meses (prazo 2027-02-28, 4 h/semana mantidas, ≈ 88 h). Mantido 2026-12-31 como marco do uso diário; Fase 2 de 4 para 5 semanas; Fase 3 de 2 para 4 semanas; `topic_automacao_python` volta a básico; Fase 4 de 4 para 8 semanas; incluídas uma semana de revisão (13) e uma de folga (22). Nenhuma evidência existia.
 - 2026-10-01 (rev. 2): pedido do aluno para incluir o básico de skills, MCP, hooks e rules e o ecossistema do app (Projects, Cowork, Claude in Chrome). Sem aumentar o orçamento de 52 h:
   - rules incorporadas a `topic_cc_contexto`; ecossistema incorporado a `topic_escolha_ambiente`; plugins incorporados a `topic_skills`;
   - `topic_integracoes` focado em MCP e conectores;

@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "study_id": "study_c524375c-79b6-4041-9fba-7222addff28b",
-  "revision": 2,
-  "updated_at": "2026-10-01T21:22:38Z",
+  "revision": 3,
+  "updated_at": "2026-10-01T21:25:54Z",
   "topics": [
     {
       "topic_id": "topic_cc_modelo_mental",
@@ -96,7 +96,7 @@
     },
     {
       "topic_id": "topic_automacao_python",
-      "name": "Pequenas automações em Python construídas e testadas com Claude Code (opcional)",
+      "name": "Pequenas automações em Python construídas e testadas com Claude Code",
       "mastery": 0,
       "retention": "unknown",
       "status": "not_started",

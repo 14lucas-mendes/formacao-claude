@@ -2,8 +2,8 @@
   "schema_version": 2,
   "study_id": "study_c524375c-79b6-4041-9fba-7222addff28b",
   "topic": "Claude Code e ecossistema Claude aplicados ao trabalho e a serviços com IA",
-  "goal": "Em 3 meses: (1) usar Claude Code e o ecossistema Claude (Projects, Cowork, conectores, Claude in Chrome) no fluxo de trabalho diário de forma segura, verificável e documentada; (2) ter uma primeira oferta de serviço com IA definida, com um piloto entregue ou proposta apresentada a pelo menos um cliente potencial, como base para renda extra. Fora do escopo: construir produto/SaaS próprio.",
-  "deadline": "2026-12-31",
+  "goal": "Em 5 meses (até 2027-02-28): (1) até o marco de 2026-12-31, usar Claude Code e o ecossistema Claude (Projects, Cowork, conectores, Claude in Chrome) no fluxo de trabalho diário de forma segura, verificável e documentada; (2) até 2027-02-28, ter uma primeira oferta de serviço com IA definida, com um piloto entregue ou proposta apresentada a pelo menos um cliente potencial, como base para renda extra. Fora do escopo: construir produto/SaaS próprio.",
+  "deadline": "2027-02-28",
   "weekly_hours": 4,
   "preferred_times": [
     "fins de semana",

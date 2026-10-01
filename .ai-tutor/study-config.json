@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "study_id": "study_c524375c-79b6-4041-9fba-7222addff28b",
-  "topic": "Claude Code e ecossistema Claude aplicados ao trabalho e a serviços com IA",
-  "goal": "Em 5 meses (até 2027-02-28): (1) até o marco de 2026-12-31, usar Claude Code e o ecossistema Claude (Projects, Cowork, conectores, Claude in Chrome) no fluxo de trabalho diário de forma segura, verificável e documentada; (2) até 2027-02-28, ter uma primeira oferta de serviço com IA definida, com um piloto entregue ou proposta apresentada a pelo menos um cliente potencial, como base para renda extra. Fora do escopo: construir produto/SaaS próprio.",
+  "topic": "Claude Code, Python e agentes de IA para transição de carreira em automação, com foco em manutenção industrial",
+  "goal": "Em 5 meses (até 2027-02-28), concluir a primeira etapa da transição de carreira para automação, agentes de IA e desenvolvimento: (1) até o marco de 2026-12-31, usar Claude Code e o ecossistema Claude no trabalho diário de forma segura, verificável e documentada; (2) escrever, testar e revisar automações em Python e um agente simples com a API do Claude; (3) publicar 1–2 projetos de portfólio no GitHub voltados a manutenção; (4) ter uma primeira oferta de serviço apresentada a pelo menos um cliente potencial. Fora do escopo: construir produto/SaaS próprio.",
   "deadline": "2027-02-28",
   "weekly_hours": 4,
   "preferred_times": [
@@ -17,8 +17,17 @@
     "prefer_pt_br": true,
     "primary_sources": [
       "https://code.claude.com/docs",
-      "https://docs.claude.com"
+      "https://platform.claude.com/docs",
+      "https://support.claude.com"
     ]
   },
-  "external_consents": {}
+  "external_consents": {},
+  "learner_context": {
+    "current_role": "Empregado público (CLT) em empresa de transporte ferroviário, setor de manutenção",
+    "career_goal": "Transição para automação, agentes de IA e desenvolvimento de software, começando por Python",
+    "declared_by_learner_2026-10-01": [
+      "Renda extra é permitida no vínculo atual (CLT)",
+      "Sem restrição para usar informações da empresa no próprio workflow com Claude"
+    ]
+  }
 }

@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "study_id": "study_c524375c-79b6-4041-9fba-7222addff28b",
-  "revision": 3,
-  "updated_at": "2026-10-01T21:25:54Z",
+  "revision": 4,
+  "updated_at": "2026-10-01T21:31:23Z",
   "topics": [
     {
       "topic_id": "topic_cc_modelo_mental",
@@ -51,7 +51,7 @@
     },
     {
       "topic_id": "topic_workflow_trabalho",
-      "name": "Automatizar uma tarefa recorrente do trabalho com processo documentado e medido",
+      "name": "Automatizar uma tarefa recorrente da manutenção com processo documentado e medido",
       "mastery": 0,
       "retention": "unknown",
       "status": "not_started",
@@ -95,8 +95,35 @@
       "evidence_ids": []
     },
     {
+      "topic_id": "topic_python_qualidade",
+      "name": "Python com testes, Git e leitura crítica de código gerado por IA",
+      "mastery": 0,
+      "retention": "unknown",
+      "status": "not_started",
+      "last_practice": null,
+      "evidence_ids": []
+    },
+    {
       "topic_id": "topic_automacao_python",
-      "name": "Pequenas automações em Python construídas e testadas com Claude Code",
+      "name": "Automações em Python para problemas de manutenção, construídas e testadas com Claude Code",
+      "mastery": 0,
+      "retention": "unknown",
+      "status": "not_started",
+      "last_practice": null,
+      "evidence_ids": []
+    },
+    {
+      "topic_id": "topic_agentes_api",
+      "name": "Agente simples com a API do Claude: chamada, tool use e loop agêntico",
+      "mastery": 0,
+      "retention": "unknown",
+      "status": "not_started",
+      "last_practice": null,
+      "evidence_ids": []
+    },
+    {
+      "topic_id": "topic_portfolio",
+      "name": "Portfólio: 1–2 projetos no GitHub com README voltados a manutenção",
       "mastery": 0,
       "retention": "unknown",
       "status": "not_started",
@@ -105,7 +132,7 @@
     },
     {
       "topic_id": "topic_nicho_problema",
-      "name": "Escolher nicho e problema de serviço a partir da própria experiência e de conversas reais",
+      "name": "Nicho em automação para manutenção industrial: problema validado em conversas reais",
       "mastery": 0,
       "retention": "unknown",
       "status": "not_started",
@@ -138,6 +165,6 @@
   "projects": [],
   "next_focus": {
     "topic_id": "topic_cc_modelo_mental",
-    "action": "Primeira sessão: mapear tarefas recorrentes do trabalho do aluno (área e rotinas) e iniciar o modelo mental do Claude Code."
+    "action": "Primeira sessão: levantar 2–3 tarefas recorrentes da manutenção (candidatas ao workflow e ao portfólio) e iniciar o modelo mental do Claude Code."
   }
 }

@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "study_id": "study_c524375c-79b6-4041-9fba-7222addff28b",
-  "revision": 7,
-  "updated_at": "2026-10-02T17:01:53Z",
+  "revision": 8,
+  "updated_at": "2026-10-02T17:04:36Z",
   "topics": [
     {
       "topic_id": "topic_cc_modelo_mental",
@@ -174,7 +174,7 @@
         "topic_cc_modelo_mental"
       ],
       "objective": "Explicar com as próprias palavras o loop agêntico do Claude Code (contexto → decisão → ferramenta → observação → repetição) e localizar cada etapa numa tarefa real.",
-      "checkpoint": "Tarefas recorrentes levantadas. Próximo: resposta do aluno à pergunta de diagnóstico sobre o que acontece entre o pedido e a resposta no Claude Code.",
+      "checkpoint": "Diagnóstico: aluno declarou não ter modelo mental do que ocorre entre pedido e resposta (sem tentativa; não registrado como evidência). Ensinado o loop agêntico com analogia da ordem de serviço. Próximo: explicação autônoma do aluno aplicando o loop ao pedido da planilha de ocorrências.",
       "evidence_ids": [],
       "learner_context": {
         "recurring_tasks": [

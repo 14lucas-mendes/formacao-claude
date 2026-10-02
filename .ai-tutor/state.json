@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "study_id": "study_c524375c-79b6-4041-9fba-7222addff28b",
-  "revision": 6,
-  "updated_at": "2026-10-02T16:59:49Z",
+  "revision": 7,
+  "updated_at": "2026-10-02T17:01:53Z",
   "topics": [
     {
       "topic_id": "topic_cc_modelo_mental",
@@ -174,8 +174,14 @@
         "topic_cc_modelo_mental"
       ],
       "objective": "Explicar com as próprias palavras o loop agêntico do Claude Code (contexto → decisão → ferramenta → observação → repetição) e localizar cada etapa numa tarefa real.",
-      "checkpoint": "Sessão aberta. Etapa 1: levantar tarefas recorrentes da manutenção e checar pré-requisito (modelo mental atual do aluno).",
-      "evidence_ids": []
+      "checkpoint": "Tarefas recorrentes levantadas. Próximo: resposta do aluno à pergunta de diagnóstico sobre o que acontece entre o pedido e a resposta no Claude Code.",
+      "evidence_ids": [],
+      "learner_context": {
+        "recurring_tasks": [
+          "Preenchimento de ART (Análise de Risco)",
+          "Busca de ocorrências antigas, verificação de fechamentos e comparação com falhas atuais para identificar ocorrências transferidas ou fechadas incorretamente"
+        ]
+      }
     }
   ],
   "lessons": [],

@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "study_id": "study_c524375c-79b6-4041-9fba-7222addff28b",
-  "revision": 5,
-  "updated_at": "2026-10-01T21:35:12Z",
+  "revision": 6,
+  "updated_at": "2026-10-02T16:59:49Z",
   "topics": [
     {
       "topic_id": "topic_cc_modelo_mental",
@@ -159,7 +159,25 @@
     }
   ],
   "evidences": [],
-  "sessions": [],
+  "sessions": [
+    {
+      "session_id": "session_001",
+      "status": "in_progress",
+      "transitions": [
+        "in_progress"
+      ],
+      "started_at": "2026-10-02T16:59:49Z",
+      "ended_at": null,
+      "resumable": true,
+      "lesson_ids": [],
+      "topic_ids": [
+        "topic_cc_modelo_mental"
+      ],
+      "objective": "Explicar com as próprias palavras o loop agêntico do Claude Code (contexto → decisão → ferramenta → observação → repetição) e localizar cada etapa numa tarefa real.",
+      "checkpoint": "Sessão aberta. Etapa 1: levantar tarefas recorrentes da manutenção e checar pré-requisito (modelo mental atual do aluno).",
+      "evidence_ids": []
+    }
+  ],
   "lessons": [],
   "weak_points": [],
   "projects": [],

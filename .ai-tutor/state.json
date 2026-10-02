@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "study_id": "study_c524375c-79b6-4041-9fba-7222addff28b",
-  "revision": 8,
-  "updated_at": "2026-10-02T17:04:36Z",
+  "revision": 9,
+  "updated_at": "2026-10-02T17:06:13Z",
   "topics": [
     {
       "topic_id": "topic_cc_modelo_mental",
@@ -162,9 +162,10 @@
   "sessions": [
     {
       "session_id": "session_001",
-      "status": "in_progress",
+      "status": "interrupted",
       "transitions": [
-        "in_progress"
+        "in_progress",
+        "interrupted"
       ],
       "started_at": "2026-10-02T16:59:49Z",
       "ended_at": null,
@@ -174,14 +175,21 @@
         "topic_cc_modelo_mental"
       ],
       "objective": "Explicar com as próprias palavras o loop agêntico do Claude Code (contexto → decisão → ferramenta → observação → repetição) e localizar cada etapa numa tarefa real.",
-      "checkpoint": "Diagnóstico: aluno declarou não ter modelo mental do que ocorre entre pedido e resposta (sem tentativa; não registrado como evidência). Ensinado o loop agêntico com analogia da ordem de serviço. Próximo: explicação autônoma do aluno aplicando o loop ao pedido da planilha de ocorrências.",
+      "checkpoint": "Interrompida a pedido do aluno após o ensino do loop agêntico (analogia da ordem de serviço). Pendente: tentativa autônoma do aluno descrevendo o loop para o pedido do script de ocorrencias.xlsx (ferramentas, observações, papel de supervisor).",
       "evidence_ids": [],
       "learner_context": {
         "recurring_tasks": [
           "Preenchimento de ART (Análise de Risco)",
           "Busca de ocorrências antigas, verificação de fechamentos e comparação com falhas atuais para identificar ocorrências transferidas ou fechadas incorretamente"
         ]
-      }
+      },
+      "interrupted_at": "2026-10-02T17:06:13Z",
+      "next_step": "Retomar com um rápido resgate (sem reexplicar) e pedir a tentativa autônoma pendente.",
+      "difficulty": "Aluno sem modelo mental prévio do funcionamento interno do Claude Code.",
+      "files_changed": [
+        ".ai-tutor/state.json",
+        "session-log.md"
+      ]
     }
   ],
   "lessons": [],
@@ -189,6 +197,6 @@
   "projects": [],
   "next_focus": {
     "topic_id": "topic_cc_modelo_mental",
-    "action": "Primeira sessão: levantar 2–3 tarefas recorrentes da manutenção (candidatas ao workflow e ao portfólio) e iniciar o modelo mental do Claude Code."
+    "action": "Retomar session_001: tentativa autônoma explicando o loop agêntico aplicado ao script de ocorrências."
   }
 }

@@ -2,6 +2,8 @@ name: Validar formação
 
 on:
   push:
+    branches:
+      - claude/formacao-profissional-empreendedora-np6j6r
   pull_request:
 
 permissions:

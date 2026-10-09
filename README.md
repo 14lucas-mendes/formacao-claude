@@ -59,7 +59,7 @@ As trilhas vigentes estão somente em `.ai-tutor/study-config.json`; a migraçã
 | `.ai-tutor/` | Configuração e estado canônico em JSON |
 | `.claude/skills/ai-tutor/` | Cópia da skill de acompanhamento |
 | [scripts/validate_curriculum.py](scripts/validate_curriculum.py) | Verificação das trilhas e do checklist obrigatório |
-| [.github/workflows/validate-study.yml](.github/workflows/validate-study.yml) | Testes e validadores em pushes e PRs |
+| [.github/workflows/validate-study.yml](.github/workflows/validate-study.yml) | Testes e validadores em PRs e pushes na branch padrão |
 
 ## Validar o estudo
 
@@ -76,7 +76,7 @@ Se o seu sistema usa `python` para Python 3.11+, substitua `python3`. Execute co
 
 O validador curricular rejeita IDs sem classificação, repetidos, presentes em mais de uma trilha ou ausentes do estado, além de divergências entre o núcleo e o checklist. Ele usa apenas a configuração vigente; snapshots de migração não precisam acompanhar revisões futuras. Essa checagem não substitui a validação de evidências e sessões feita pela skill.
 
-O CI executa esses testes e validadores com Python 3.11, sem depender de Claude Code, MCP ou credenciais de API. O pipeline verifica arquivos e invariantes; não comprova o comportamento pedagógico do tutor nem realiza os exercícios do aluno.
+O CI executa esses testes e validadores em PRs e pushes na branch padrão, com Python 3.11, sem depender de Claude Code, MCP ou credenciais de API. O filtro de branch evita uma execução adicional por `push` a cada atualização da PR. O pipeline verifica arquivos e invariantes; não comprova o comportamento pedagógico do tutor nem realiza os exercícios do aluno.
 
 Não reinicialize o estudo para aplicar a nova trilha: o ID do estudo, as evidências e os checkpoints devem continuar preservados.
 

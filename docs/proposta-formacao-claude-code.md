@@ -45,4 +45,5 @@ O validador de pacote da skill já falha por ausência de `agents/openai.yaml`; 
 - **P2:** fonte vigente e snapshot distinguidos; `/progress` e `/review` limitados ao núcleo; classificação e checklist validados por `scripts/validate_curriculum.py`, com testes que reproduzem IDs sem classificação e sobreposição entre trilhas. A skill permanece intacta; o script não é um seletor automático de tópicos.
 - **P3:** laboratório 02 usa um repositório de prática gravável, com a alternativa do laboratório 01, sem editar o pacote do tutor.
 - **Caso informativo:** laboratório 03 omite equipamentos com apenas ocorrências abertas e define resultado vazio quando não há finalizadas; os dados incluem um equipamento que exercita esse caso.
-- **Validação contínua:** CI executa testes e os dois validadores em pushes e PRs, sem usar o agente ou dados externos.
+- **Validação contínua:** CI executa testes e os dois validadores em PRs e pushes na branch padrão, sem usar o agente ou dados externos.
+- **Revisão seguinte:** laboratório 04 distingue equipamento apenas com abertas (resultado vazio válido) de equipamento ausente (erro). O CI evita duplicidade de eventos nas branches de PR; o teste do diretório padrão usa um estudo temporário, deixando a validação do currículo real para o passo próprio do pipeline.

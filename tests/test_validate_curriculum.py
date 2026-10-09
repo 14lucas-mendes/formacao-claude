@@ -3,6 +3,7 @@
 import copy
 import json
 from pathlib import Path
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -35,7 +36,7 @@ class CurriculumValidationTests(unittest.TestCase):
         }
         self.curriculum = "- [ ] `topic_core`: competência obrigatória\n"
 
-    def run_validation(self, config=None, state=None, curriculum=None):
+    def write_study(self, config=None, state=None, curriculum=None):
         metadata = self.root / ".ai-tutor"
         (metadata / "study-config.json").write_text(
             json.dumps(self.config if config is None else config), encoding="utf-8"
@@ -46,6 +47,9 @@ class CurriculumValidationTests(unittest.TestCase):
         (self.root / "curriculum.md").write_text(
             self.curriculum if curriculum is None else curriculum, encoding="utf-8"
         )
+
+    def run_validation(self, config=None, state=None, curriculum=None):
+        self.write_study(config=config, state=state, curriculum=curriculum)
         return subprocess.run(
             [sys.executable, str(VALIDATOR), str(self.root)],
             capture_output=True,
@@ -128,8 +132,18 @@ class CurriculumValidationTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr + result.stdout)
 
     def test_default_repository_root_is_independent_of_cwd(self):
+        self.write_study()
+        scripts = self.root / "scripts"
+        scripts.mkdir()
+        copied_validator = scripts / VALIDATOR.name
+        shutil.copyfile(VALIDATOR, copied_validator)
+        unrelated_cwd = self.root / "unrelated"
+        unrelated_cwd.mkdir()
         result = subprocess.run(
-            [sys.executable, str(VALIDATOR)], cwd=self.root, capture_output=True, text=True
+            [sys.executable, str(copied_validator)],
+            cwd=unrelated_cwd,
+            capture_output=True,
+            text=True,
         )
         self.assertEqual(result.returncode, 0, result.stderr + result.stdout)
 

@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "study_id": "study_c524375c-79b6-4041-9fba-7222addff28b",
+  "migration_id": "migration_curriculum_v6",
+  "recorded_at": "2026-10-09T16:47:13Z",
+  "reason": "Reposicionar a formação para uso profissional de Claude Code, conforme pedido de revisão do projeto.",
+  "from_revision": 9,
+  "to_revision": 10,
+  "from_curriculum_version": 5,
+  "to_curriculum_version": 6,
+  "added_topic_ids": [
+    "topic_cc_setup",
+    "topic_cc_planejamento",
+    "topic_cc_sessoes",
+    "topic_cc_debugging",
+    "topic_cc_git_pr",
+    "topic_cc_custos",
+    "topic_cc_subagentes",
+    "topic_cc_worktrees",
+    "topic_cc_ci"
+  ],
+  "preserved_topic_ids": [
+    "topic_cc_modelo_mental",
+    "topic_cc_contexto",
+    "topic_cc_seguranca",
+    "topic_escolha_ambiente",
+    "topic_cowork_projects",
+    "topic_workflow_trabalho",
+    "topic_verificacao_saidas",
+    "topic_skills",
+    "topic_integracoes",
+    "topic_hooks_permissoes",
+    "topic_python_qualidade",
+    "topic_automacao_python",
+    "topic_agentes_api",
+    "topic_portfolio",
+    "topic_nicho_problema",
+    "topic_oferta_servico",
+    "topic_piloto_cliente"
+  ],
+  "preserved_session_ids": [
+    "session_001"
+  ],
+  "curriculum_tracks": {
+    "core_topic_ids": [
+      "topic_cc_setup",
+      "topic_cc_modelo_mental",
+      "topic_escolha_ambiente",
+      "topic_cc_seguranca",
+      "topic_cc_contexto",
+      "topic_cc_planejamento",
+      "topic_cc_sessoes",
+      "topic_python_qualidade",
+      "topic_verificacao_saidas",
+      "topic_cc_debugging",
+      "topic_cc_git_pr",
+      "topic_workflow_trabalho",
+      "topic_automacao_python",
+      "topic_cc_custos",
+      "topic_skills",
+      "topic_integracoes",
+      "topic_hooks_permissoes",
+      "topic_cc_subagentes",
+      "topic_cc_worktrees",
+      "topic_cc_ci",
+      "topic_portfolio"
+    ],
+    "optional_topic_ids": [
+      "topic_agentes_api"
+    ],
+    "retired_topic_ids": [
+      "topic_cowork_projects",
+      "topic_nicho_problema",
+      "topic_oferta_servico",
+      "topic_piloto_cliente"
+    ]
+  },
+  "progress_granted": false,
+  "history_preserved": true
+}

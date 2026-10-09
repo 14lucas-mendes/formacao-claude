@@ -1,0 +1,5 @@
+ocorrencia_id,equipamento,status,duracao_minutos
+OS001,BOMBA01,finalizada,60
+OS002,MOTOR02,finalizada,0
+OS003,BOMBA01,finalizada,30
+OS004,MOTOR02,aberta,15

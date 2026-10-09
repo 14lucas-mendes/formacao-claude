@@ -1,0 +1,5 @@
+inspecao_id,ativo,resultado,minutos
+IN001,BOMBA01,sem_ajuste,12
+IN002,MOTOR02,ajuste_necessario,25
+IN003,BOMBA01,ajuste_necessario,0
+IN004,MOTOR02,sem_ajuste,8

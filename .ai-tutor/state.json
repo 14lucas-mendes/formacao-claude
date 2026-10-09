@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "study_id": "study_c524375c-79b6-4041-9fba-7222addff28b",
-  "revision": 9,
-  "updated_at": "2026-10-02T17:06:13Z",
+  "revision": 10,
+  "updated_at": "2026-10-09T16:47:13Z",
   "topics": [
     {
       "topic_id": "topic_cc_modelo_mental",
@@ -15,7 +15,7 @@
     },
     {
       "topic_id": "topic_cc_contexto",
-      "name": "Contexto e instruções: CLAUDE.md, rules (.claude/rules), auto memory, /clear e /compact",
+      "name": "Contexto e instruções: CLAUDE.md, rules, memória e seleção de arquivos",
       "mastery": 0,
       "retention": "unknown",
       "status": "not_started",
@@ -24,7 +24,7 @@
     },
     {
       "topic_id": "topic_cc_seguranca",
-      "name": "Trabalho seguro: modos de permissão, revisão de diffs, Git como rede de segurança, dados sensíveis",
+      "name": "Permissões, sandbox, revisão de diffs, Git e dados sensíveis",
       "mastery": 0,
       "retention": "unknown",
       "status": "not_started",
@@ -33,7 +33,7 @@
     },
     {
       "topic_id": "topic_escolha_ambiente",
-      "name": "Mapa do ecossistema Claude e escolha do ambiente: Chat, Projects, Cowork, Claude in Chrome, Claude Code (terminal, desktop, nuvem)",
+      "name": "Superfícies do Claude Code: terminal, editor e execução remota",
       "mastery": 0,
       "retention": "unknown",
       "status": "not_started",
@@ -51,7 +51,7 @@
     },
     {
       "topic_id": "topic_workflow_trabalho",
-      "name": "Automatizar uma tarefa recorrente da manutenção com processo documentado e medido",
+      "name": "Workflow profissional de desenvolvimento documentado e medido",
       "mastery": 0,
       "retention": "unknown",
       "status": "not_started",
@@ -60,7 +60,7 @@
     },
     {
       "topic_id": "topic_verificacao_saidas",
-      "name": "Verificar saídas de IA: critérios de aceitação, checagem de fatos, testes",
+      "name": "Critérios de aceitação e verificação independente de código e saídas",
       "mastery": 0,
       "retention": "unknown",
       "status": "not_started",
@@ -69,7 +69,7 @@
     },
     {
       "topic_id": "topic_skills",
-      "name": "Skills e plugins: quando criar, estrutura de SKILL.md, manutenção e reutilização",
+      "name": "Skills e plugins: criação, teste, reutilização e distribuição",
       "mastery": 0,
       "retention": "unknown",
       "status": "not_started",
@@ -78,7 +78,7 @@
     },
     {
       "topic_id": "topic_integracoes",
-      "name": "MCP e conectores: o que são, como conectar, permissões, riscos e custos",
+      "name": "MCP no Claude Code: escopos, ferramentas, configuração e falhas",
       "mastery": 0,
       "retention": "unknown",
       "status": "not_started",
@@ -87,7 +87,7 @@
     },
     {
       "topic_id": "topic_hooks_permissoes",
-      "name": "Hooks e regras de permissão: quando usar instrução, hook ou permissão (orientação vs garantia)",
+      "name": "Hooks e permissões: eventos, configuração e validação do comportamento",
       "mastery": 0,
       "retention": "unknown",
       "status": "not_started",
@@ -96,7 +96,7 @@
     },
     {
       "topic_id": "topic_python_qualidade",
-      "name": "Python com testes, Git e leitura crítica de código gerado por IA",
+      "name": "Leitura crítica e implementação Python com testes usando Claude Code",
       "mastery": 0,
       "retention": "unknown",
       "status": "not_started",
@@ -105,7 +105,7 @@
     },
     {
       "topic_id": "topic_automacao_python",
-      "name": "Automações em Python para problemas de manutenção, construídas e testadas com Claude Code",
+      "name": "Automação Python de ocorrências construída, testada e mantida com Claude Code",
       "mastery": 0,
       "retention": "unknown",
       "status": "not_started",
@@ -123,7 +123,7 @@
     },
     {
       "topic_id": "topic_portfolio",
-      "name": "Portfólio: 1–2 projetos no GitHub com README voltados a manutenção",
+      "name": "Projeto integrador e portfólio: entrega reproduzível com Claude Code",
       "mastery": 0,
       "retention": "unknown",
       "status": "not_started",
@@ -151,6 +151,87 @@
     {
       "topic_id": "topic_piloto_cliente",
       "name": "Executar piloto ou apresentar proposta a um cliente potencial e registrar aprendizados",
+      "mastery": 0,
+      "retention": "unknown",
+      "status": "not_started",
+      "last_practice": null,
+      "evidence_ids": []
+    },
+    {
+      "topic_id": "topic_cc_setup",
+      "name": "Instalação, autenticação, diagnóstico e integração com editor",
+      "mastery": 0,
+      "retention": "unknown",
+      "status": "not_started",
+      "last_practice": null,
+      "evidence_ids": []
+    },
+    {
+      "topic_id": "topic_cc_planejamento",
+      "name": "Especificação, exploração de repositórios e Plan Mode",
+      "mastery": 0,
+      "retention": "unknown",
+      "status": "not_started",
+      "last_practice": null,
+      "evidence_ids": []
+    },
+    {
+      "topic_id": "topic_cc_sessoes",
+      "name": "Gestão de sessões: retomada, compactação e limites dos checkpoints",
+      "mastery": 0,
+      "retention": "unknown",
+      "status": "not_started",
+      "last_practice": null,
+      "evidence_ids": []
+    },
+    {
+      "topic_id": "topic_cc_debugging",
+      "name": "Debugging: reprodução, hipóteses, correção e regressão",
+      "mastery": 0,
+      "retention": "unknown",
+      "status": "not_started",
+      "last_practice": null,
+      "evidence_ids": []
+    },
+    {
+      "topic_id": "topic_cc_git_pr",
+      "name": "Branches, commits, revisão de código e pull requests",
+      "mastery": 0,
+      "retention": "unknown",
+      "status": "not_started",
+      "last_practice": null,
+      "evidence_ids": []
+    },
+    {
+      "topic_id": "topic_cc_custos",
+      "name": "Escolha de modelos, gestão de contexto, consumo e produtividade",
+      "mastery": 0,
+      "retention": "unknown",
+      "status": "not_started",
+      "last_practice": null,
+      "evidence_ids": []
+    },
+    {
+      "topic_id": "topic_cc_subagentes",
+      "name": "Subagentes: delegação delimitada, ferramentas e revisão",
+      "mastery": 0,
+      "retention": "unknown",
+      "status": "not_started",
+      "last_practice": null,
+      "evidence_ids": []
+    },
+    {
+      "topic_id": "topic_cc_worktrees",
+      "name": "Worktrees e sessões paralelas: isolamento e integração",
+      "mastery": 0,
+      "retention": "unknown",
+      "status": "not_started",
+      "last_practice": null,
+      "evidence_ids": []
+    },
+    {
+      "topic_id": "topic_cc_ci",
+      "name": "Claude Code não interativo e CI: saída, falhas, credenciais e revisão",
       "mastery": 0,
       "retention": "unknown",
       "status": "not_started",

@@ -12,7 +12,7 @@ Consulte [memória](https://code.claude.com/docs/en/memory), [CLI](https://code.
 
 ## Prática
 
-1. Escolha um pequeno repositório existente e execute seus testes de referência. Pode ser uma automação sua; se não existir, use os scripts do tutor apenas para leitura, sem modificar sua cópia.
+1. Escolha um pequeno repositório de prática seu e execute seus testes de referência. Se não tiver uma automação existente, use o repositório descartável criado no laboratório 01 e copie para ele `projects/dados/`. Registre a ausência de testes como parte do estado inicial e planeje criá-los no laboratório 03. Todos os arquivos escritos neste exercício ficam no repositório de prática; a skill do tutor permanece somente leitura.
 2. Inicie `claude --permission-mode plan`. Peça entradas, dependências, comandos e testes relevantes. Confira três referências citadas nos arquivos reais.
 3. Escreva no repositório de prática um CLAUDE.md curto com comandos e convenções; acrescente uma rule com escopo adequado. Observe quais instruções são carregadas.
 4. Planeje a consolidação dos [dados de ocorrências](../../projects/dados/README.md): saídas, casos inválidos, testes e arquivos a alterar. Identifique uma suposição ainda não verificada.

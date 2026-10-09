@@ -41,6 +41,8 @@ Cada sessão combina explicação curta, prática com Claude Code, tentativa aut
 
 Um tópico obrigatório só é concluído em **domínio 80**, com explicação autônoma, aplicação autônoma e aplicação em outro contexto. Conteúdo recebido, código gerado e tempo de estudo não comprovam domínio. Registre arquivos, comandos, resultados e IDs de evidência com o tutor. Os enunciados dos laboratórios são material de estudo, não entregas já concluídas.
 
+As trilhas vigentes estão somente em `.ai-tutor/study-config.json`; a migração guarda um snapshot histórico. Em `/progress` e `/review`, o tutor considera o núcleo obrigatório e apresenta opcionais e históricos à parte. Essa adaptação é definida pelas instruções do projeto em `CLAUDE.md`; a skill vendorizada não interpreta `curriculum_tracks` nativamente.
+
 ## Estrutura
 
 | Caminho | Uso |
@@ -56,17 +58,25 @@ Um tópico obrigatório só é concluído em **domínio 80**, com explicação a
 | `projects/` | Trabalhos do aluno e dados fictícios para prática |
 | `.ai-tutor/` | Configuração e estado canônico em JSON |
 | `.claude/skills/ai-tutor/` | Cópia da skill de acompanhamento |
+| [scripts/validate_curriculum.py](scripts/validate_curriculum.py) | Verificação das trilhas e do checklist obrigatório |
+| [.github/workflows/validate-study.yml](.github/workflows/validate-study.yml) | Testes e validadores em pushes e PRs |
 
 ## Validar o estudo
 
 A partir da raiz do repositório, em um shell POSIX ou PowerShell:
 
 ```sh
+python3 scripts/validate_curriculum.py
+python3 -m unittest discover -s tests -v
 cd .claude/skills/ai-tutor
 python3 -m scripts.validate_study ../../..
 ```
 
 Se o seu sistema usa `python` para Python 3.11+, substitua `python3`. Execute como módulo: nesta versão, chamar `scripts/validate_study.py` diretamente falha no import.
+
+O validador curricular rejeita IDs sem classificação, repetidos, presentes em mais de uma trilha ou ausentes do estado, além de divergências entre o núcleo e o checklist. Ele usa apenas a configuração vigente; snapshots de migração não precisam acompanhar revisões futuras. Essa checagem não substitui a validação de evidências e sessões feita pela skill.
+
+O CI executa esses testes e validadores com Python 3.11, sem depender de Claude Code, MCP ou credenciais de API. O pipeline verifica arquivos e invariantes; não comprova o comportamento pedagógico do tutor nem realiza os exercícios do aluno.
 
 Não reinicialize o estudo para aplicar a nova trilha: o ID do estudo, as evidências e os checkpoints devem continuar preservados.
 

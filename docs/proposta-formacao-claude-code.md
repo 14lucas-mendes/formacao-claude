@@ -22,6 +22,8 @@ Havia também uma inconsistência de avaliação: tópicos “básicos” com me
 - Manter os 17 IDs existentes, acrescentar nove e preservar integralmente a sessão, o checkpoint e o próximo foco.
 - Manter prazo, marco de uso diário e orçamento existentes. A distribuição usa 100 h de trilha e 4 h de recuperação; não promete domínio em tempo fixo.
 - Manter a skill vendorizada sem alterações. Adaptar a formação pelo contrato do estudo.
+- Tratar a configuração como única fonte vigente das trilhas e a migração como snapshot histórico. Delimitar progresso, revisão e seleção de lições ao núcleo pelas instruções do projeto.
+- Verificar classificação e checklist com script da biblioteca padrão, testes de regressão e CI, fora da skill vendorizada.
 
 ## Critérios de aceite
 
@@ -37,3 +39,10 @@ Havia também uma inconsistência de avaliação: tópicos “básicos” com me
 As lições personalizadas continuam sendo geradas pelo tutor conforme o diagnóstico, em vez de preencher o estado com aulas não realizadas. O material estático permite começar as práticas e revisar o método. Evoluções futuras podem acrescentar exemplos em outras linguagens e atualizar a skill em uma PR dedicada.
 
 O validador de pacote da skill já falha por ausência de `agents/openai.yaml`; o validador do estudo passa. A mudança curricular não corrige nem modifica a cópia da skill.
+
+## Ajustes após a revisão da PR
+
+- **P2:** fonte vigente e snapshot distinguidos; `/progress` e `/review` limitados ao núcleo; classificação e checklist validados por `scripts/validate_curriculum.py`, com testes que reproduzem IDs sem classificação e sobreposição entre trilhas. A skill permanece intacta; o script não é um seletor automático de tópicos.
+- **P3:** laboratório 02 usa um repositório de prática gravável, com a alternativa do laboratório 01, sem editar o pacote do tutor.
+- **Caso informativo:** laboratório 03 omite equipamentos com apenas ocorrências abertas e define resultado vazio quando não há finalizadas; os dados incluem um equipamento que exercita esse caso.
+- **Validação contínua:** CI executa testes e os dois validadores em pushes e PRs, sem usar o agente ou dados externos.

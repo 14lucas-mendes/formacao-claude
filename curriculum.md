@@ -149,4 +149,8 @@ Estes IDs continuam em `.ai-tutor/state.json` para preservar referências anteri
 
 **2026-10-09 — versão curricular 6:** núcleo profissional de Claude Code, 21 competências obrigatórias, oito laboratórios, execução não interativa e CI, com registro de entregas. Acrescentados nove IDs; mantidos os 17 existentes, a sessão interrompida, o próximo foco e todo o histórico. Nenhuma evidência ou domínio foi criado. A configuração lista as trilhas em `curriculum_tracks`.
 
+`.ai-tutor/study-config.json` é a única fonte vigente das trilhas. O registro de migração é um snapshot da revisão, sem influência na seleção atual. Em `/progress` e `/review`, o tutor considera somente o núcleo por padrão; opcionais e históricos são apresentados à parte e estudados apenas por pedido explícito. Os status do estado continuam representando domínio, não participação na trilha.
+
+Execute `python3 scripts/validate_curriculum.py` para conferir a classificação e o checklist. Essa validação complementa o validador da skill; a seleção pedagógica segue as instruções do projeto em `CLAUDE.md`.
+
 As revisões anteriores estão em [histórico curricular](docs/historico-curricular.md).

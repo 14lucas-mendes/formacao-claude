@@ -4,11 +4,13 @@ Os arquivos desta pasta são material de prática criado para a formação. Não
 
 | Arquivo | Finalidade |
 | --- | --- |
-| [ocorrencias-validas.csv](ocorrencias-validas.csv) | Soma, duração zero e estado aberto |
+| [ocorrencias-validas.csv](ocorrencias-validas.csv) | Soma, duração zero e equipamento com apenas ocorrências abertas |
 | [ocorrencias-invalidas.csv](ocorrencias-invalidas.csv) | Campo vazio, negativo, duplicidade e estado desconhecido |
 | [inspecoes.csv](inspecoes.csv) | Transferência para outra estrutura e regra de negócio |
 
 CSV usa UTF-8, vírgula e uma linha de cabeçalho. `duracao_minutos` e `minutos` são inteiros. Identificadores de OS, equipamentos e inspeções são inventados.
+
+No arquivo válido, `COMPRESSOR03` tem somente uma ocorrência `aberta`. Pelo contrato do laboratório 03, ele não aparece na consolidação; `MOTOR02` continua aparecendo por ter uma ocorrência `finalizada` com duração zero. Para testar um arquivo com somente ocorrências abertas, crie uma entrada contendo apenas as linhas `aberta`; o resultado esperado é vazio.
 
 No arquivo de ocorrências inválidas, o registro OS101 se repete de propósito. Separe cada caso nos testes para observar todos os erros, pois o contrato inicial interrompe no primeiro erro.
 

@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "study_id": "study_c524375c-79b6-4041-9fba-7222addff28b",
-  "revision": 10,
-  "updated_at": "2026-10-09T16:47:13Z",
+  "revision": 12,
+  "updated_at": "2026-10-09T23:14:33Z",
   "topics": [
     {
       "topic_id": "topic_cc_modelo_mental",
@@ -246,6 +246,8 @@
       "status": "interrupted",
       "transitions": [
         "in_progress",
+        "interrupted",
+        "resumed",
         "interrupted"
       ],
       "started_at": "2026-10-02T16:59:49Z",
@@ -256,7 +258,7 @@
         "topic_cc_modelo_mental"
       ],
       "objective": "Explicar com as próprias palavras o loop agêntico do Claude Code (contexto → decisão → ferramenta → observação → repetição) e localizar cada etapa numa tarefa real.",
-      "checkpoint": "Interrompida a pedido do aluno após o ensino do loop agêntico (analogia da ordem de serviço). Pendente: tentativa autônoma do aluno descrevendo o loop para o pedido do script de ocorrencias.xlsx (ferramentas, observações, papel de supervisor).",
+      "checkpoint": "Retomada em 2026-10-09 e interrompida a pedido do aluno. Pedida a tentativa autônoma do loop para o script de ocorrencias.xlsx; o aluno respondeu que não sabia (o ensino de 2026-10-02 não ficou retido). Escada de ajuda passo 1: tarefa reformulada sem Claude Code, como ordem de serviço humana ('qual a primeira coisa que você faria com a planilha?'). Sem resposta ainda.",
       "evidence_ids": [],
       "learner_context": {
         "recurring_tasks": [
@@ -264,13 +266,14 @@
           "Busca de ocorrências antigas, verificação de fechamentos e comparação com falhas atuais para identificar ocorrências transferidas ou fechadas incorretamente"
         ]
       },
-      "interrupted_at": "2026-10-02T17:06:13Z",
-      "next_step": "Retomar com um rápido resgate (sem reexplicar) e pedir a tentativa autônoma pendente.",
-      "difficulty": "Aluno sem modelo mental prévio do funcionamento interno do Claude Code.",
+      "interrupted_at": "2026-10-09T23:14:33Z",
+      "next_step": "Retomar pela pergunta pendente da ordem de serviço humana (primeiro passo com a planilha desconhecida) e construir o loop passo a passo a partir das respostas do aluno, depois mapear cada passo para o Claude Code e pedir a tentativa autônoma.",
+      "difficulty": "Aluno sem modelo mental prévio do funcionamento interno do Claude Code; a explicação de 2026-10-02 não foi retida após uma semana. Preferir construção a partir da experiência de trabalho do aluno em vez de explicação expositiva.",
       "files_changed": [
         ".ai-tutor/state.json",
         "session-log.md"
-      ]
+      ],
+      "resumed_at": "2026-10-09T21:04:38Z"
     }
   ],
   "lessons": [],
@@ -278,6 +281,6 @@
   "projects": [],
   "next_focus": {
     "topic_id": "topic_cc_modelo_mental",
-    "action": "Retomar session_001: tentativa autônoma explicando o loop agêntico aplicado ao script de ocorrências."
+    "action": "Retomar session_001 pela pergunta da ordem de serviço humana e construir o loop agêntico a partir das respostas do aluno; depois, tentativa autônoma com o script de ocorrências."
   }
 }

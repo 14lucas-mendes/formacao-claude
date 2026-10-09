@@ -1,129 +1,156 @@
-# Currículo: Claude Code, Python e agentes de IA para transição de carreira
+# Currículo: formação profissional em Claude Code
 
-<!-- Itens são adicionados pelo workflow de currículo com IDs estáveis. -->
+**Objetivo:** conduzir entregas de software com Claude Code de forma profissional, verificável e reproduzível. A manutenção industrial é o cenário dos exercícios; Python serve à prática de desenvolvimento, sem transformar a trilha em um curso geral de linguagem ou API.
 
-**Contexto:** empregado público (CLT) no setor de manutenção de uma empresa de transporte ferroviário, em transição para automação, agentes de IA e desenvolvimento de software, começando por Python. O aluno declarou que pode ter renda extra e que pode usar informações da empresa no próprio workflow com Claude.
+**Planejamento:** 26 semanas × 4 h = **104 h**; 100 h distribuídas nas fases e 4 h de recuperação. Mantidos o prazo **2027-03-31** e o marco de uso diário **2026-12-31** do estudo existente. As semanas são uma sequência de referência a partir do calendário original; em uma retomada tardia, reorganize com o aluno sem reduzir os critérios nem atribuir avanço pelo tempo decorrido. Uma semana de reserva cobre 4 h; duas semanas sem estudo exigem replanejar.
 
-**Objetivo (6 meses, até 2027-03-31):** concluir a **primeira etapa** da transição:
-1. até o **marco de 2026-12-31**, usar Claude Code e o ecossistema Claude no trabalho diário de forma segura, verificável e documentada;
-2. escrever, testar e revisar automações em Python e um agente simples com a API do Claude;
-3. publicar 1–2 projetos de portfólio no GitHub voltados a manutenção;
-4. apresentar uma primeira oferta de serviço a pelo menos um cliente potencial.
+**Método:** sessões de cerca de 1 h, com resgate de pré-requisito, explicação curta, prática, tentativa autônoma e registro. O tutor retoma primeiro a sessão interrompida. O [guia profissional](docs/guia-profissional.md) apoia o método; as [fontes oficiais](docs/fontes.md) sustentam os recursos.
 
-**Fora do escopo:** construir produto/SaaS próprio; aprofundamento técnico em MCP, hooks e plugins além do necessário para usar e decidir.
+## Conclusão e evidência
 
-**Orçamento de tempo:** 4 h/semana × ~26 semanas ≈ 104 h, em sessões de ~1 h, preferencialmente no fim de semana. As semanas 12–13 caem nas festas de fim de ano: se você não estudar nelas, a semana de folga (26) cobre.
+Todo item obrigatório abaixo exige **domínio 80**, segundo o contrato da skill: explicação Feynman autônoma, aplicação autônoma independente e aplicação transferida a novo contexto. A entrega específica também deve existir, com IDs de evidência no estado e em `session-log.md`.
 
-**Regra de conclusão:** um item só é marcado quando o tópico atinge domínio 80 (explicação Feynman autônoma + aplicação autônoma + aplicação transferida para novo contexto), com IDs de evidência registrados no `session-log.md`. Ler conteúdo, receber explicação ou ter código gerado pela IA não conta como evidência; conta o que você explica, escreve, testa ou corrige.
+Autonomia significa o aluno decidir, justificar, verificar e corrigir sem receber a resposta da avaliação. Trabalhar com Claude Code é parte da competência; simplesmente aceitar código ou repetir uma explicação fornecida não é evidência. Os laboratórios não vêm resolvidos. Tentativas assistidas continuam registráveis segundo a matriz, mas não atendem aos requisitos de 60 ou 80.
 
-**Prioridade realista:** os itens com ★ são o núcleo e devem chegar a 80. Os itens **básico** têm meta 60: saber explicar e aplicar uma vez num caso real, sem transferência obrigatória.
+Um tópico só recebe checkbox concluído após essa avaliação. Familiarização opcional pode ter meta 60, mas não equivale a concluir o tópico nem a formação. Todos os itens começam abertos nesta revisão.
 
-**Fio condutor:** os mesmos problemas de manutenção atravessam as fases. A tarefa escolhida na Fase 2 vira automação em Python na Fase 4 e projeto de portfólio na Fase 5.
+**Fio condutor:** evoluir uma automação de ocorrências com dados fictícios, revisar o código, tratar um bug, incorporar um requisito novo e entregar por PR. Não exige uso de dados internos, contratar cliente ou vender serviço.
 
-**Fontes primárias:** documentação do Claude Code (https://code.claude.com/docs), da plataforma Claude/API (https://platform.claude.com/docs) e central de ajuda (https://support.claude.com). Fontes específicas são registradas por lição via `/sources`.
+## Mapa da trilha
 
----
+| Fase | Semanas | Horas | Entrega principal |
+| --- | --- | --- | --- |
+| 1. Fundamentos e ambiente | 1–3 | 12 | [Laboratório](docs/laboratorios/01-ambiente.md) |
+| 2. Contexto, planejamento e continuidade | 4–6 | 12 | [Laboratório](docs/laboratorios/02-contexto-e-plano.md) |
+| 3. Desenvolvimento, testes, debugging e PR | 7–11 | 20 | [Laboratório](docs/laboratorios/03-desenvolvimento-e-pr.md) |
+| 4. Automação e produtividade | 12–15 | 16 | [Laboratório](docs/laboratorios/04-automacao-e-custos.md) |
+| 5. Extensões e trabalho paralelo | 16–20 | 20 | [Laboratório](docs/laboratorios/05-extensoes.md) |
+| 6. Execução não interativa e CI | 21–23 | 12 | [Laboratório](docs/laboratorios/07-cli-e-ci.md) |
+| 7. Projeto integrador e avaliação | 24–25 | 8 | [Laboratório](docs/laboratorios/08-projeto-integrador.md) |
+| Recuperação e revisão final | 26 | 4 | Lacunas e revisão espaçada |
+| **Total** | **26** | **104** | Competência demonstrada |
 
-## Fase 1: Fundamentos do Claude Code (semanas 1–3, ~12 h)
+## Fase 1: Fundamentos e ambiente (semanas 1–3, 12 h)
 
-Capacidade observável: conduzir uma tarefa real no Claude Code sabendo o que ele está fazendo, por que, e como desfazer.
+**Pré-requisito:** Conforto básico com terminal; diagnosticar lacunas de Git e Python na primeira sessão.
 
-- [ ] ★ `topic_cc_modelo_mental`: Modelo mental do Claude Code: loop agêntico, ferramentas, contexto e limites
-  - Evidências: Feynman (explicar o ciclo pedido → plano → ferramentas → verificação); aplicação (conduzir uma tarefa e narrar as decisões do agente); transferência (prever o comportamento numa tarefa diferente).
-- [ ] ★ `topic_cc_contexto`: Contexto e instruções: CLAUDE.md, rules (`.claude/rules`), auto memory, /clear e /compact
-  - Inclui o básico de **rules**: arquivos `.claude/rules/*.md`, opcionalmente limitados a caminhos via `paths`; diferença entre CLAUDE.md, rules, skills e memória.
-  - Entrega: um `CLAUDE.md` útil escrito por você para um repositório real seu.
-- [ ] ★ `topic_cc_seguranca`: Trabalho seguro: modos de permissão, revisão de diffs, Git como rede de segurança, dados sensíveis
-  - Entrega: checklist pessoal de segurança aplicado a uma tarefa real, com um commit revisado por você.
+- [ ] `topic_cc_setup`: Instalação, autenticação, diagnóstico e integração com editor
+  - Entrega e demonstração: Diagnosticar a instalação, registrar versão e acesso, abrir o projeto e usar a integração do editor; reproduzir a preparação em outro ambiente ou perfil.
+- [ ] `topic_cc_modelo_mental`: Modelo mental do Claude Code: loop agêntico, ferramentas, contexto e limites
+  - Entrega e demonstração: Explicar o ciclo pedido → ferramenta → observação → nova ação; identificar cada etapa numa tarefa e prever comportamento em outra.
+- [ ] `topic_escolha_ambiente`: Superfícies do Claude Code: terminal, editor e execução remota
+  - Entrega e demonstração: Escolher uma superfície do Claude Code para duas tarefas e justificar acesso ao repositório, revisão e limitações; não exige estudar Cowork ou Chat.
+- [ ] `topic_cc_seguranca`: Permissões, sandbox, revisão de diffs, Git e dados sensíveis
+  - Entrega e demonstração: Aplicar e testar permissões em dados fictícios, revisar um diff e demonstrar recuperação de uma mudança sem perder trabalho existente.
 
-## Fase 2: Ecossistema Claude no trabalho de manutenção (semanas 4–7, ~16 h)
+**Prática:** [01-ambiente](docs/laboratorios/01-ambiente.md).
 
-Capacidade observável: escolher o ambiente certo para cada tarefa e ter uma tarefa recorrente da manutenção feita com IA, com tempo medido antes e depois.
+## Fase 2: Contexto, planejamento e continuidade (semanas 4–6, 12 h)
 
-- [ ] ★ `topic_escolha_ambiente`: Mapa do ecossistema Claude e escolha do ambiente: Chat, Projects, Cowork, Claude in Chrome, Claude Code (terminal, desktop, nuvem)
-  - Evidência: para 3 tarefas reais, escolher o ambiente e justificar; transferência com uma tarefa nova.
-  - Atenção: disponibilidade de alguns recursos (ex.: Claude in Chrome, uso do computador no Cowork) depende do plano e do sistema operacional; verificar na sua conta.
-- [ ] **básico** `topic_cowork_projects`: Cowork e Projects no trabalho: projeto com instruções e arquivos, conectores, modos de permissão e tarefas agendadas
-  - Entrega: um Project para a manutenção (ex.: manuais, procedimentos, histórico de falhas) e uma tarefa real executada no Cowork.
-- [ ] ★ `topic_workflow_trabalho`: Automatizar uma tarefa recorrente da manutenção com processo documentado e medido
-  - Exemplos: relatório de falhas, consolidação de ordens de serviço, indicadores (MTBF/MTTR), checklists de inspeção.
-  - Entrega: processo em Markdown dentro de `projects/` + medição de tempo antes/depois.
-- [ ] ★ `topic_verificacao_saidas`: Verificar saídas de IA: critérios de aceitação, checagem de fatos, testes
-  - Evidência: detectar erros plantados numa saída técnica e definir critérios de aceitação antes de pedir.
+**Pré-requisito:** Conduzir uma tarefa simples, reconhecer ferramentas e revisar alterações.
 
-## Fase 3: Extensões: skills, MCP, hooks e rules (semanas 8–9, ~8 h)
+- [ ] `topic_cc_contexto`: Contexto e instruções: CLAUDE.md, rules, memória e seleção de arquivos
+  - Entrega e demonstração: Criar CLAUDE.md e uma rule útil no projeto de prática; mostrar o que carregou e corrigir uma instrução ambígua em outra tarefa.
+- [ ] `topic_cc_planejamento`: Especificação, exploração de repositórios e Plan Mode
+  - Entrega e demonstração: Produzir um mapa do repositório e plano com arquivos, dependências e critérios; detectar uma suposição incorreta antes de implementar.
+- [ ] `topic_cc_sessoes`: Gestão de sessões: retomada, compactação e limites dos checkpoints
+  - Entrega e demonstração: Interromper e retomar uma tarefa com checkpoint escrito, confirmar o estado real e explicar o que Git e checkpoints podem recuperar.
 
-Capacidade observável: diante de uma necessidade, decidir se ela pede instrução (CLAUDE.md/rule), skill, conector/MCP, hook ou permissão, e aplicar o básico de cada um.
+**Prática:** [02-contexto-e-plano](docs/laboratorios/02-contexto-e-plano.md).
 
-- [ ] **básico** `topic_skills`: Skills e plugins: quando criar, estrutura de SKILL.md, manutenção e reutilização
-  - Aplicação: uma skill para o workflow da Fase 2. Plugins apenas como conceito: pacote que distribui skills, hooks e servidores MCP juntos.
-- [ ] **básico** `topic_integracoes`: MCP e conectores: o que são, como conectar, permissões, riscos e custos
-  - Aplicação: conectar um serviço que você já usa (ex.: Google Drive, Gmail, Notion) e executar uma tarefa real com ele.
-- [ ] **básico** `topic_hooks_permissoes`: Hooks e regras de permissão: quando usar instrução, hook ou permissão (orientação vs garantia)
-  - Ideia central: CLAUDE.md e rules orientam, mas não garantem; hooks e regras de permissão (`allow`/`deny` em `settings.json`) são aplicados pelo cliente.
-  - Aplicação: um hook simples ou uma regra `deny` num repositório seu.
+## Fase 3: Desenvolvimento, testes, debugging e PR (semanas 7–11, 20 h)
 
-## Fase 4: Python e agentes, o novo núcleo (semanas 10–18, ~36 h)
+**Pré-requisito:** Ter um plano verificável e contexto mínimo do projeto de prática.
 
-Capacidade observável: escrever, testar e explicar código Python próprio, revisar criticamente código gerado pela IA e construir um agente simples com a API do Claude.
+- [ ] `topic_python_qualidade`: Leitura crítica e implementação Python com testes usando Claude Code
+  - Entrega e demonstração: Explicar o código gerado, escrever uma função e teste de borda autonomamente e refatorar sem alterar o comportamento.
+- [ ] `topic_verificacao_saidas`: Critérios de aceitação e verificação independente de código e saídas
+  - Entrega e demonstração: Definir esperado antes de gerar código, detectar uma saída incorreta e usar teste independente; verificar um segundo caso não fornecido pelo tutor.
+- [ ] `topic_cc_debugging`: Debugging: reprodução, hipóteses, correção e regressão
+  - Entrega e demonstração: Reproduzir um bug, testar uma hipótese e entregar correção com teste que falhe antes e passe depois; repetir com falha diferente.
+- [ ] `topic_cc_git_pr`: Branches, commits, revisão de código e pull requests
+  - Entrega e demonstração: Preparar branch, revisar diff, produzir commit do aluno e PR com comandos e resultados; revisar também uma alteração de outra tarefa.
 
-- [ ] ★ `topic_python_qualidade`: Python com testes, Git e leitura crítica de código gerado por IA
-  - Evidência: escrever uma função com testes sem ajuda; encontrar e corrigir um bug plantado em código gerado por IA; explicar linha a linha um trecho gerado.
-- [ ] ★ `topic_automacao_python`: Automações em Python para problemas de manutenção, construídas e testadas com Claude Code
-  - Entrega: script em `projects/<slug>/` que resolve a tarefa da Fase 2 (ex.: ler planilha de OS, calcular indicadores, gerar relatório), com teste executado e resultado registrado.
-- [ ] ★ `topic_agentes_api`: Agente simples com a API do Claude: chamada, tool use e loop agêntico
-  - Entrega: agente em Python com 1–2 ferramentas próprias (ex.: consultar histórico de falhas, buscar no manual) e explicação de quando um agente é melhor que um script simples.
+**Prática:** [03-desenvolvimento-e-pr](docs/laboratorios/03-desenvolvimento-e-pr.md).
 
-## Marco do mês 3: revisão de uso diário (semana 13, até 2026-12-31, ~1 h dentro da Fase 4)
+## Fase 4: Automação e produtividade (semanas 12–15, 16 h)
 
-Checagem com `/progress` e `/review`: os tópicos ★ das Fases 1–2 devem estar em 80 e o workflow da Fase 2 em uso real no trabalho. Se não estiverem, o atraso é registrado aqui e a Fase 3 é a primeira a ser comprimida.
+**Pré-requisito:** Conseguir executar testes, detectar um bug e revisar uma PR.
 
-## Fase 5: Portfólio e primeira oferta (semanas 19–25, ~28 h)
+- [ ] `topic_workflow_trabalho`: Workflow profissional de desenvolvimento documentado e medido
+  - Entrega e demonstração: Registrar um procedimento repetível desde o pedido até a revisão; medir tempo e retrabalho com limites explícitos da comparação.
+- [ ] `topic_automacao_python`: Automação Python de ocorrências construída, testada e mantida com Claude Code
+  - Entrega e demonstração: Entregar CLI para dados fictícios, testes e README; aceitar mudança de requisito por uma segunda PR preservando comportamento anterior.
+- [ ] `topic_cc_custos`: Escolha de modelos, gestão de contexto, consumo e produtividade
+  - Entrega e demonstração: Registrar consumo disponível e tempo em duas tarefas comparáveis, justificar modelo e contexto, identificar onde a medição não permite concluir.
 
-Capacidade observável: projetos públicos que um recrutador ou cliente entende sem você explicar, e uma oferta concreta validada com pessoas reais. As semanas extras servem para as conversas com clientes, que dependem da agenda de outras pessoas.
+**Prática:** [04-automacao-e-custos](docs/laboratorios/04-automacao-e-custos.md).
 
-- [ ] ★ `topic_portfolio`: Portfólio: 1–2 projetos no GitHub com README voltados a manutenção
-  - Entrega: repositório público com problema, solução, como rodar, testes e limitações; **sem dados internos da empresa** (use dados fictícios ou anonimizados no que for público).
-- [ ] ★ `topic_nicho_problema`: Nicho em automação para manutenção industrial: problema validado em conversas reais
-  - Evidência: notas de pelo menos 3 conversas com potenciais clientes.
-- [ ] ★ `topic_oferta_servico`: Desenhar a oferta: escopo, entregáveis, preço, riscos, LGPD e responsabilidades
-  - Entrega: proposta de uma página.
-- [ ] ★ `topic_piloto_cliente`: Executar piloto ou apresentar proposta a um cliente potencial e registrar aprendizados
+## Fase 5: Extensões e trabalho paralelo (semanas 16–20, 20 h)
 
-## Semana 26: folga e revisão final (~4 h)
+**Pré-requisito:** Workflow de desenvolvimento e automação verificáveis; práticas de acesso e retomada exercitadas.
 
-Recupera atrasos ou faz a revisão espaçada final. Não é espaço para novos tópicos. Inclui planejar a **segunda etapa** da transição.
+- [ ] `topic_skills`: Skills e plugins: criação, teste, reutilização e distribuição
+  - Entrega e demonstração: Criar e invocar uma skill em dois casos, verificar falhas e revisar um pacote de plugin; não exige instalar plugins de terceiros.
+- [ ] `topic_integracoes`: MCP no Claude Code: escopos, ferramentas, configuração e falhas
+  - Entrega e demonstração: Configurar ou inspecionar MCP de fonte confiável, executar uma leitura controlada e diagnosticar indisponibilidade ou acesso negado.
+- [ ] `topic_hooks_permissoes`: Hooks e permissões: eventos, configuração e validação do comportamento
+  - Entrega e demonstração: Criar hook de comando para um evento específico, testar sucesso e falha; demonstrar uma regra de permissão e explicar seu escopo.
+- [ ] `topic_cc_subagentes`: Subagentes: delegação delimitada, ferramentas e revisão
+  - Entrega e demonstração: Criar subagente para investigação delimitada, conferir ferramentas efetivas e verificar suas conclusões contra arquivos reais.
+- [ ] `topic_cc_worktrees`: Worktrees e sessões paralelas: isolamento e integração
+  - Entrega e demonstração: Executar tarefas distintas em worktrees separados, revisar e integrar branches, resolver um conflito controlado e encerrar sem perda.
 
----
+**Prática:** [05-extensoes](docs/laboratorios/05-extensoes.md). Inclui também o [laboratório de subagentes e worktrees](docs/laboratorios/06-subagentes-e-worktrees.md); os dois dividem as 20 h desta fase.
 
-## Fontes verificadas (acesso em 2026-10-01)
+## Fase 6: Execução não interativa e CI (semanas 21–23, 12 h)
 
-- Claude Code Docs: How Claude remembers your project (CLAUDE.md, `.claude/rules/`, auto memory): https://code.claude.com/docs/en/memory
-- Claude Code Docs: Extend Claude with skills: https://code.claude.com/docs/en/skills
-- Claude Code Docs: Connect Claude Code to tools via MCP: https://code.claude.com/docs/en/mcp
-- Claude Code Docs: Automate actions with hooks: https://code.claude.com/docs/en/hooks-guide
-- Claude Code Docs: Configure permissions: https://code.claude.com/docs/en/permissions
-- Claude Code Docs: Plugins overview: https://code.claude.com/docs/en/plugins/overview
-- Claude Code Docs: Desktop application: https://code.claude.com/docs/en/desktop
-- Claude Code Docs: Agent SDK overview: https://code.claude.com/docs/en/agent-sdk/overview
-- Claude Platform Docs: Tool use overview: https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview
-- Claude Help Center: Get started with Claude Cowork: https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork
-- Claude Help Center: Get started with Claude in Chrome: https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome
+**Pré-requisito:** Testes determinísticos e revisão manual funcionando; conhecer permissões e consumo.
 
-## Revisões do roadmap
+- [ ] `topic_cc_ci`: Claude Code não interativo e CI: saída, falhas, credenciais e revisão
+  - Entrega e demonstração: Executar análise não interativa, validar retorno e saída, e demonstrar CI em repositório de prática com sucesso e falha observáveis.
 
-- 2026-10-01 (rev. 5): pedido do aluno para estender de 5 para 6 meses (prazo 2027-03-31, 4 h/semana, ≈ 104 h), com base na estimativa de 85–105 h para o núcleo. Fase 4 de 7 para 9 semanas (+8 h); Fase 5 de 5 para 7 semanas (+8 h); folga passa para a semana 26. Marco de 2026-12-31 mantido. Nenhuma evidência existia.
-- 2026-10-01 (rev. 4): o aluno informou que está em transição de carreira (manutenção ferroviária → automação, agentes de IA e desenvolvimento, começando por Python), que é CLT, que pode ter renda extra e que pode usar informações da empresa no próprio workflow. Mantidos 5 meses e ≈ 88 h:
-  - nova Fase 4 "Python e agentes" (★): `topic_python_qualidade`, `topic_automacao_python` (promovido), `topic_agentes_api`;
-  - nova Fase 5 "Portfólio e primeira oferta", com `topic_portfolio` (★) antes do nicho e da oferta;
-  - nicho direcionado a manutenção industrial; workflow da Fase 2 direcionado a tarefas de manutenção;
-  - Fase 2 de 5 para 4 semanas; Fase 3 de 4 para 2 semanas, toda em meta básica (`topic_skills` deixa de ser ★);
-  - marco de 2026-12-31 mantido, agora dentro da Fase 4. Nenhuma evidência existia.
-- 2026-10-01 (rev. 3): pedido do aluno para estender o plano de 3 para 5 meses (prazo 2027-02-28, 4 h/semana mantidas, ≈ 88 h). Mantido 2026-12-31 como marco do uso diário; Fase 2 de 4 para 5 semanas; Fase 3 de 2 para 4 semanas; `topic_automacao_python` volta a básico; Fase 4 de 4 para 8 semanas; incluídas uma semana de revisão (13) e uma de folga (22). Nenhuma evidência existia.
-- 2026-10-01 (rev. 2): pedido do aluno para incluir o básico de skills, MCP, hooks e rules e o ecossistema do app (Projects, Cowork, Claude in Chrome). Sem aumentar o orçamento de 52 h:
-  - rules incorporadas a `topic_cc_contexto`; ecossistema incorporado a `topic_escolha_ambiente`; plugins incorporados a `topic_skills`;
-  - `topic_integracoes` focado em MCP e conectores;
-  - novos tópicos básicos: `topic_cowork_projects` e `topic_hooks_permissoes`;
-  - Fase 2 ganha uma semana; Fase 3 cai para 2 semanas; `topic_automacao_python` passa a opcional.
-  - Nenhuma evidência existia; nenhum histórico foi perdido.
-- 2026-10-01 (rev. 1): currículo inicial criado no setup. Nenhuma evidência ou domínio registrado.
+**Prática:** [07-cli-e-ci](docs/laboratorios/07-cli-e-ci.md).
+
+## Fase 7: Projeto integrador e avaliação (semanas 24–25, 8 h)
+
+**Pré-requisito:** Competências anteriores praticadas; usar as lacunas do tutor para priorizar revisão.
+
+- [ ] `topic_portfolio`: Projeto integrador e portfólio: entrega reproduzível com Claude Code
+  - Entrega e demonstração: Apresentar projeto executável com duas PRs e histórico de testes; resolver pedido novo autonomamente e explicar limites e manutenção.
+
+**Prática:** [08-projeto-integrador](docs/laboratorios/08-projeto-integrador.md).
+
+## Marco de uso diário (até 2026-12-31)
+
+Revise com `/progress` e `/review` o uso real do Claude Code, os tópicos das Fases 1–3 e o fluxo da primeira automação. Busque entrega com plano, teste, diff revisado e retomada documentada. Se houver lacunas, registre o atraso e redistribua sessões com o aluno; não marque domínio automaticamente nem comprima segurança e verificação.
+
+## Semana 26: recuperação e revisão (4 h)
+
+Reveja as evidências e a retenção, repita uma tarefa em outro contexto e confira pendências do projeto. Se 4 h não bastarem, registre a necessidade de extensão. A conclusão não é garantida pelo prazo.
+
+## Aprofundamento opcional
+
+- `topic_agentes_api`: agente via API do Claude. Estudo posterior, fora das 104 h; meta inicial de familiarização 60 com explicação e aplicação autônomas. Exige verificar acesso e cobrança próprios. Usar Claude Code para desenvolver o agente é diferente de executar Claude Code.
+- Empacotamento avançado de plugins, Agent SDK e recursos experimentais podem ser incluídos por pedido e com replanejamento; não bloqueiam o núcleo.
+
+## Tópicos históricos fora do núcleo
+
+Estes IDs continuam em `.ai-tutor/state.json` para preservar referências anteriores. Não entram nos requisitos de conclusão nem no próximo tópico automático:
+
+| ID | Escopo anterior |
+| --- | --- |
+| `topic_cowork_projects` | Cowork e Projects no trabalho |
+| `topic_nicho_problema` | Validação de nicho com clientes |
+| `topic_oferta_servico` | Desenho de oferta comercial |
+| `topic_piloto_cliente` | Piloto ou proposta a cliente |
+
+## Revisão desta trilha
+
+**2026-10-09 — versão curricular 6:** núcleo profissional de Claude Code, 21 competências obrigatórias, oito laboratórios, execução não interativa e CI, com registro de entregas. Acrescentados nove IDs; mantidos os 17 existentes, a sessão interrompida, o próximo foco e todo o histórico. Nenhuma evidência ou domínio foi criado. A configuração lista as trilhas em `curriculum_tracks`.
+
+`.ai-tutor/study-config.json` é a única fonte vigente das trilhas. O registro de migração é um snapshot da revisão, sem influência na seleção atual. Em `/progress` e `/review`, o tutor considera somente o núcleo por padrão; opcionais e históricos são apresentados à parte e estudados apenas por pedido explícito. Os status do estado continuam representando domínio, não participação na trilha.
+
+Execute `python3 scripts/validate_curriculum.py` para conferir a classificação e o checklist. Essa validação complementa o validador da skill; a seleção pedagógica segue as instruções do projeto em `CLAUDE.md`.
+
+As revisões anteriores estão em [histórico curricular](docs/historico-curricular.md).

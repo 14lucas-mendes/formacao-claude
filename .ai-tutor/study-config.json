@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "study_id": "study_c524375c-79b6-4041-9fba-7222addff28b",
-  "topic": "Claude Code, Python e agentes de IA para transição de carreira em automação, com foco em manutenção industrial",
-  "goal": "Em 6 meses (até 2027-03-31), concluir a primeira etapa da transição de carreira para automação, agentes de IA e desenvolvimento: (1) até o marco de 2026-12-31, usar Claude Code e o ecossistema Claude no trabalho diário de forma segura, verificável e documentada; (2) escrever, testar e revisar automações em Python e um agente simples com a API do Claude; (3) publicar 1–2 projetos de portfólio no GitHub voltados a manutenção; (4) ter uma primeira oferta de serviço apresentada a pelo menos um cliente potencial. Fora do escopo: construir produto/SaaS próprio.",
+  "topic": "Formação profissional em Claude Code: desenvolvimento, testes, revisão, extensões e automação",
+  "goal": "Até 2027-03-31, concluir uma formação profissional em Claude Code com 26 semanas de referência e 4 h/semana (104 h): preparar o ambiente; explorar repositórios e planejar mudanças; implementar, depurar, testar e revisar código; conduzir branches e PRs; gerenciar contexto, sessões, modelos e consumo; criar e verificar skills, MCP, hooks e subagentes; integrar trabalho com worktrees, execução não interativa e CI. Demonstrar domínio 80 em todos os tópicos obrigatórios e entregar um projeto reproduzível com dados fictícios. Manter 2026-12-31 como marco de revisão do uso diário. Python e manutenção industrial são meios de prática; Cowork, agente via API e oferta comercial não são requisitos.",
   "deadline": "2027-03-31",
   "weekly_hours": 4,
   "preferred_times": [
@@ -28,6 +28,41 @@
     "declared_by_learner_2026-10-01": [
       "Renda extra é permitida no vínculo atual (CLT)",
       "Sem restrição para usar informações da empresa no próprio workflow com Claude"
+    ]
+  },
+  "curriculum_version": 6,
+  "curriculum_tracks": {
+    "core_topic_ids": [
+      "topic_cc_setup",
+      "topic_cc_modelo_mental",
+      "topic_escolha_ambiente",
+      "topic_cc_seguranca",
+      "topic_cc_contexto",
+      "topic_cc_planejamento",
+      "topic_cc_sessoes",
+      "topic_python_qualidade",
+      "topic_verificacao_saidas",
+      "topic_cc_debugging",
+      "topic_cc_git_pr",
+      "topic_workflow_trabalho",
+      "topic_automacao_python",
+      "topic_cc_custos",
+      "topic_skills",
+      "topic_integracoes",
+      "topic_hooks_permissoes",
+      "topic_cc_subagentes",
+      "topic_cc_worktrees",
+      "topic_cc_ci",
+      "topic_portfolio"
+    ],
+    "optional_topic_ids": [
+      "topic_agentes_api"
+    ],
+    "retired_topic_ids": [
+      "topic_cowork_projects",
+      "topic_nicho_problema",
+      "topic_oferta_servico",
+      "topic_piloto_cliente"
     ]
   }
 }
